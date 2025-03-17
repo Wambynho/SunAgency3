@@ -4,3 +4,13 @@ AppData/
 *.log 
 /dist 
 /build 
+# Ignorer les dossiers système
+AppData/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers de logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
