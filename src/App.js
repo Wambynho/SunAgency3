@@ -11,13 +11,13 @@ function App() {
       <div>
         {/* Barre de navigation */}
         <nav style={{ backgroundColor: '#FFD700', padding: '10px', textAlign: 'center' }}>
-          <Link to="/" style={{ margin: '10px' }}>Accueil</Link>
-          <Link to="/services" style={{ margin: '10px' }}>Services</Link>
-          <Link to="/destinations" style={{ margin: '10px' }}>Destinations</Link>
-          <Link to="/contact" style={{ margin: '10px' }}>Contact</Link>
+          <Link to="/" style={{ margin: '10px', textDecoration: 'none', color: 'black', fontWeight: 'bold' }}>Accueil</Link> | 
+          <Link to="/services" style={{ margin: '10px', textDecoration: 'none', color: 'black', fontWeight: 'bold' }}>Services</Link> | 
+          <Link to="/destinations" style={{ margin: '10px', textDecoration: 'none', color: 'black', fontWeight: 'bold' }}>Destinations</Link> | 
+          <Link to="/contact" style={{ margin: '10px', textDecoration: 'none', color: 'black', fontWeight: 'bold' }}>Contact</Link>
         </nav>
 
-        {/* Gestion des routes */}
+        {/* Gestion des pages */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
